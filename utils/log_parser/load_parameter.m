@@ -1,0 +1,34 @@
+
+%% load controller parameters
+CONTROL_PARAM.Value.VEL_XY_P = get_param_val(LogHeader.param_group_list, 'CONTROL', 'VEL_XY_P');
+CONTROL_PARAM.Value.VEL_XY_I = get_param_val(LogHeader.param_group_list, 'CONTROL', 'VEL_XY_I');
+CONTROL_PARAM.Value.VEL_XY_D = get_param_val(LogHeader.param_group_list, 'CONTROL', 'VEL_XY_D');
+CONTROL_PARAM.Value.VEL_Z_P = get_param_val(LogHeader.param_group_list, 'CONTROL', 'VEL_Z_P');
+CONTROL_PARAM.Value.VEL_Z_I = get_param_val(LogHeader.param_group_list, 'CONTROL', 'VEL_Z_I');
+CONTROL_PARAM.Value.VEL_Z_D = get_param_val(LogHeader.param_group_list, 'CONTROL', 'VEL_Z_D');
+CONTROL_PARAM.Value.VEL_XY_I_MIN = get_param_val(LogHeader.param_group_list, 'CONTROL', 'VEL_XY_I_MIN');
+CONTROL_PARAM.Value.VEL_XY_I_MAX = get_param_val(LogHeader.param_group_list, 'CONTROL', 'VEL_XY_I_MAX');
+CONTROL_PARAM.Value.VEL_XY_D_MIN = get_param_val(LogHeader.param_group_list, 'CONTROL', 'VEL_XY_D_MIN');
+CONTROL_PARAM.Value.VEL_XY_D_MAX = get_param_val(LogHeader.param_group_list, 'CONTROL', 'VEL_XY_D_MAX');
+CONTROL_PARAM.Value.VEL_Z_I_MIN = get_param_val(LogHeader.param_group_list, 'CONTROL', 'VEL_Z_I_MIN');
+CONTROL_PARAM.Value.VEL_Z_I_MAX = get_param_val(LogHeader.param_group_list, 'CONTROL', 'VEL_Z_I_MAX');
+CONTROL_PARAM.Value.VEL_Z_D_MIN = get_param_val(LogHeader.param_group_list, 'CONTROL', 'VEL_Z_D_MIN');
+CONTROL_PARAM.Value.VEL_Z_D_MAX = get_param_val(LogHeader.param_group_list, 'CONTROL', 'VEL_Z_D_MAX');
+CONTROL_PARAM.Value.ROLL_P = get_param_val(LogHeader.param_group_list, 'CONTROL', 'ROLL_P');
+CONTROL_PARAM.Value.PITCH_P = get_param_val(LogHeader.param_group_list, 'CONTROL', 'PITCH_P');
+CONTROL_PARAM.Value.ROLL_PITCH_CMD_LIM = get_param_val(LogHeader.param_group_list, 'CONTROL', 'ROLL_PITCH_CMD_LIM');
+CONTROL_PARAM.Value.ROLL_RATE_P = get_param_val(LogHeader.param_group_list, 'CONTROL', 'ROLL_RATE_P');
+CONTROL_PARAM.Value.PITCH_RATE_P = get_param_val(LogHeader.param_group_list, 'CONTROL', 'PITCH_RATE_P');
+CONTROL_PARAM.Value.YAW_RATE_P = get_param_val(LogHeader.param_group_list, 'CONTROL', 'YAW_RATE_P');
+CONTROL_PARAM.Value.ROLL_RATE_I = get_param_val(LogHeader.param_group_list, 'CONTROL', 'ROLL_RATE_I');
+CONTROL_PARAM.Value.PITCH_RATE_I = get_param_val(LogHeader.param_group_list, 'CONTROL', 'PITCH_RATE_I');
+CONTROL_PARAM.Value.YAW_RATE_I = get_param_val(LogHeader.param_group_list, 'CONTROL', 'YAW_RATE_I');
+CONTROL_PARAM.Value.ROLL_RATE_D = get_param_val(LogHeader.param_group_list, 'CONTROL', 'ROLL_RATE_D');
+CONTROL_PARAM.Value.PITCH_RATE_D = get_param_val(LogHeader.param_group_list, 'CONTROL', 'PITCH_RATE_D');
+CONTROL_PARAM.Value.YAW_RATE_D = get_param_val(LogHeader.param_group_list, 'CONTROL', 'YAW_RATE_D');
+CONTROL_PARAM.Value.RATE_I_MIN = get_param_val(LogHeader.param_group_list, 'CONTROL', 'RATE_I_MIN');
+CONTROL_PARAM.Value.RATE_I_MAX = get_param_val(LogHeader.param_group_list, 'CONTROL', 'RATE_I_MAX');
+CONTROL_PARAM.Value.RATE_D_MIN = get_param_val(LogHeader.param_group_list, 'CONTROL', 'RATE_D_MIN');
+CONTROL_PARAM.Value.RATE_D_MAX = get_param_val(LogHeader.param_group_list, 'CONTROL', 'RATE_D_MAX');
+CONTROL_PARAM.Value.P_Q_CMD_LIM = get_param_val(LogHeader.param_group_list, 'CONTROL', 'P_Q_CMD_LIM');
+CONTROL_PARAM.Value.R_CMD_LIM = get_param_val(LogHeader.param_group_list, 'CONTROL', 'R_CMD_LIM');
