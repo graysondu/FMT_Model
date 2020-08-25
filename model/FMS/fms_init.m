@@ -9,7 +9,8 @@ FMS_CONST.dt = 0.008;
 %% Paramaters
 FMS_PARAM_VALUE.StickDeadZone = single(0.1);
 FMS_PARAM_VALUE.XY_P = single(0.95);
-FMS_PARAM_VALUE.Z_P = single(1);
+% FMS_PARAM_VALUE.Z_P = single(1);
+FMS_PARAM_VALUE.Z_P = single(1.2);
 FMS_PARAM_VALUE.VEL_XY_LIM = single(5);
 FMS_PARAM_VALUE.VEL_Z_LIM = single(2.5);
 FMS_PARAM_VALUE.YAW_P = single(1);
