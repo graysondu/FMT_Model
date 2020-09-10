@@ -1,8 +1,15 @@
 
-%% Constant Variable (Only used by model)
-CONTROL_CONST.dt = 0.004;
+%% Constant Variable
+CONTROL_CONST.dt = 0.002;   % model execution period
 
-%% Paramaters (Export to firmware)
+%% Exported Value
+CONTROL_EXPORT_VALUE.period = uint32(CONTROL_CONST.dt*1e3);
+CONTROL_EXPORT_VALUE.model_info = int8(['Base Controller', 0]); % 0 for end of string
+% Export to firmware
+CONTROL_EXPORT = Simulink.Parameter(CONTROL_EXPORT_VALUE);
+CONTROL_EXPORT.CoderInfo.StorageClass = 'ExportedGlobal';
+
+%% Paramaters
 CONTROL_PARAM_VALUE.VEL_XY_P = single(0.9);
 CONTROL_PARAM_VALUE.VEL_XY_I = single(0.09);
 CONTROL_PARAM_VALUE.VEL_XY_D = single(0.01);
@@ -20,10 +27,8 @@ CONTROL_PARAM_VALUE.VEL_Z_I_MIN = single(-0.15);
 CONTROL_PARAM_VALUE.VEL_Z_I_MAX = single(0.15);
 CONTROL_PARAM_VALUE.VEL_Z_D_MIN = single(-0.1);
 CONTROL_PARAM_VALUE.VEL_Z_D_MAX = single(0.1);
-CONTROL_PARAM_VALUE.ROLL_P = single(3);
-CONTROL_PARAM_VALUE.PITCH_P = single(3);
-% CONTROL_PARAM_VALUE.ROLL_P = single(5.73);
-% CONTROL_PARAM_VALUE.PITCH_P = single(5.73);
+CONTROL_PARAM_VALUE.ROLL_P = single(4.5);
+CONTROL_PARAM_VALUE.PITCH_P = single(4.5);
 CONTROL_PARAM_VALUE.ROLL_PITCH_CMD_LIM = single(pi/6);
 
 CONTROL_PARAM_VALUE.ROLL_RATE_P = single(0.075);
@@ -41,12 +46,6 @@ CONTROL_PARAM_VALUE.RATE_D_MIN = single(-0.1);
 CONTROL_PARAM_VALUE.RATE_D_MAX = single(0.1);
 CONTROL_PARAM_VALUE.P_Q_CMD_LIM = single(pi/2);
 CONTROL_PARAM_VALUE.R_CMD_LIM = single(pi);
-
+% Export to firmware
 CONTROL_PARAM = Simulink.Parameter(CONTROL_PARAM_VALUE);
 CONTROL_PARAM.CoderInfo.StorageClass = 'ExportedGlobal';
-
-%% Exported Value (Export to firmware)
-CONTROL_EXPORT_VALUE.period = uint32(CONTROL_CONST.dt*1e3); 
-
-CONTROL_EXPORT = Simulink.Parameter(CONTROL_EXPORT_VALUE);
-CONTROL_EXPORT.CoderInfo.StorageClass = 'ExportedGlobal';

@@ -1,6 +1,9 @@
 %% Firmament Autopilot
 %% brief: run this script to init FMT Model
 
+start_time = 0;
+end_time = 1000;
+
 %% init path
 filepath = which(mfilename);
 filefolder = fileparts(filepath);

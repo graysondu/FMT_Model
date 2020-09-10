@@ -1,3 +1,35 @@
+%% load ins parameters
+gyr_bias(1,1) = get_param_val(LogHeader.param_group_list, 'CALIB', 'GYRO0_XOFF');
+gyr_bias(2,1) = get_param_val(LogHeader.param_group_list, 'CALIB', 'GYRO0_YOFF');
+gyr_bias(3,1) = get_param_val(LogHeader.param_group_list, 'CALIB', 'GYRO0_ZOFF');
+INS_PARAM.Value.GyroBias = gyr_bias;
+acc_bias(1,1) = get_param_val(LogHeader.param_group_list, 'CALIB', 'ACC0_XOFF');
+acc_bias(2,1) = get_param_val(LogHeader.param_group_list, 'CALIB', 'ACC0_YOFF');
+acc_bias(3,1) = get_param_val(LogHeader.param_group_list, 'CALIB', 'ACC0_ZOFF');
+INS_PARAM.Value.AccBias = acc_bias;
+INS_PARAM.Value.AccRotMat(1,1) = get_param_val(LogHeader.param_group_list, 'CALIB', 'ACC0_XXSCALE');
+INS_PARAM.Value.AccRotMat(2,2) = get_param_val(LogHeader.param_group_list, 'CALIB', 'ACC0_YYSCALE');
+INS_PARAM.Value.AccRotMat(3,3) = get_param_val(LogHeader.param_group_list, 'CALIB', 'ACC0_ZZSCALE');
+INS_PARAM.Value.AccRotMat(1,2) = get_param_val(LogHeader.param_group_list, 'CALIB', 'ACC0_XYSCALE');
+INS_PARAM.Value.AccRotMat(2,1) = get_param_val(LogHeader.param_group_list, 'CALIB', 'ACC0_XYSCALE');
+INS_PARAM.Value.AccRotMat(1,3) = get_param_val(LogHeader.param_group_list, 'CALIB', 'ACC0_XZSCALE');
+INS_PARAM.Value.AccRotMat(3,1) = get_param_val(LogHeader.param_group_list, 'CALIB', 'ACC0_XZSCALE');
+INS_PARAM.Value.AccRotMat(2,3) = get_param_val(LogHeader.param_group_list, 'CALIB', 'ACC0_YZSCALE');
+INS_PARAM.Value.AccRotMat(3,2) = get_param_val(LogHeader.param_group_list, 'CALIB', 'ACC0_YZSCALE');
+mag_bias(1,1) = get_param_val(LogHeader.param_group_list, 'CALIB', 'MAG0_XOFF');
+mag_bias(2,1) = get_param_val(LogHeader.param_group_list, 'CALIB', 'MAG0_YOFF');
+mag_bias(3,1) = get_param_val(LogHeader.param_group_list, 'CALIB', 'MAG0_ZOFF');
+INS_PARAM.Value.MagBias = mag_bias;
+INS_PARAM.Value.MagRotMat(1,1) = get_param_val(LogHeader.param_group_list, 'CALIB', 'MAG0_XXSCALE');
+INS_PARAM.Value.MagRotMat(2,2) = get_param_val(LogHeader.param_group_list, 'CALIB', 'MAG0_YYSCALE');
+INS_PARAM.Value.MagRotMat(3,3) = get_param_val(LogHeader.param_group_list, 'CALIB', 'MAG0_ZZSCALE');
+INS_PARAM.Value.MagRotMat(1,2) = get_param_val(LogHeader.param_group_list, 'CALIB', 'MAG0_XYSCALE');
+INS_PARAM.Value.MagRotMat(2,1) = get_param_val(LogHeader.param_group_list, 'CALIB', 'MAG0_XYSCALE');
+INS_PARAM.Value.MagRotMat(1,3) = get_param_val(LogHeader.param_group_list, 'CALIB', 'MAG0_XZSCALE');
+INS_PARAM.Value.MagRotMat(3,1) = get_param_val(LogHeader.param_group_list, 'CALIB', 'MAG0_XZSCALE');
+INS_PARAM.Value.MagRotMat(2,3) = get_param_val(LogHeader.param_group_list, 'CALIB', 'MAG0_YZSCALE');
+INS_PARAM.Value.MagRotMat(3,2) = get_param_val(LogHeader.param_group_list, 'CALIB', 'MAG0_YZSCALE');
+INS_PARAM.Value.USE_EXTERN_FILTER = get_param_val(LogHeader.param_group_list, 'INS', 'USE_EXTERN_FILTER');
 
 %% load controller parameters
 CONTROL_PARAM.Value.VEL_XY_P = get_param_val(LogHeader.param_group_list, 'CONTROL', 'VEL_XY_P');
