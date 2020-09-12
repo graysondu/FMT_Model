@@ -154,6 +154,14 @@ while ~feof(fileID) && ftell(fileID)<fileDir.bytes
         MsgCount{msg_id} = MsgCount{msg_id} + 1;
     else
         fprintf('invalid msg end flag:%d, msg id:%d\r\n', msg_end, msg_id);
+        % delete invalid msg
+        for k = 1:LogHeader.bus(index).num_elem
+            try
+                LogMsg{msg_id}{k}(:, MsgCount{msg_id}+1) = [];
+            catch
+                continue
+            end
+        end
     end
 end
 fclose(fileID);
@@ -201,7 +209,7 @@ for n = 1:LogHeader.num_bus
        time_stamp = double(LogMsg{msg_id}{timestamp_id}-LogMsg{msg_id}{timestamp_id}(1)) * 0.001;   % milli second to second
     end
     
-    % construct Bsu variable
+    % construct Bus variable
     for k = 1:LogHeader.bus(n).num_elem
         ElemName = strrep(LogHeader.bus(n).elem_list(k).name, '"', '');
         ElemName = ElemName(~isspace(ElemName));
