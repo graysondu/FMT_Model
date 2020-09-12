@@ -31,6 +31,16 @@ INS_PARAM.Value.MagRotMat(2,3) = get_param_val(LogHeader.param_group_list, 'CALI
 INS_PARAM.Value.MagRotMat(3,2) = get_param_val(LogHeader.param_group_list, 'CALIB', 'MAG0_YZSCALE');
 INS_PARAM.Value.USE_EXTERN_FILTER = get_param_val(LogHeader.param_group_list, 'INS', 'USE_EXTERN_FILTER');
 
+%% load fms parameters
+FMS_PARAM.Value.StickDeadZone = get_param_val(LogHeader.param_group_list, 'FMS', 'STICK_DEADZONE');
+FMS_PARAM.Value.XY_P = get_param_val(LogHeader.param_group_list, 'FMS', 'XY_P');
+FMS_PARAM.Value.Z_P = get_param_val(LogHeader.param_group_list, 'FMS', 'Z_P');
+FMS_PARAM.Value.VEL_XY_LIM = get_param_val(LogHeader.param_group_list, 'FMS', 'VEL_XY_LIM');
+FMS_PARAM.Value.VEL_Z_LIM = get_param_val(LogHeader.param_group_list, 'FMS', 'VEL_Z_LIM');
+FMS_PARAM.Value.YAW_P = get_param_val(LogHeader.param_group_list, 'FMS', 'YAW_P');
+FMS_PARAM.Value.YAW_RATE_LIM = get_param_val(LogHeader.param_group_list, 'FMS', 'YAW_RATE_LIM');
+FMS_PARAM.Value.ROLL_PITCH_LIM = get_param_val(LogHeader.param_group_list, 'FMS', 'ROLL_PITCH_LIM');
+
 %% load controller parameters
 CONTROL_PARAM.Value.VEL_XY_P = get_param_val(LogHeader.param_group_list, 'CONTROL', 'VEL_XY_P');
 CONTROL_PARAM.Value.VEL_XY_I = get_param_val(LogHeader.param_group_list, 'CONTROL', 'VEL_XY_I');
