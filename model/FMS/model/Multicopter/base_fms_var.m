@@ -1,6 +1,6 @@
 
 %% Constant Variable (for internal use)
-FMS_CONST.dt = 0.008;
+FMS_CONST.dt = 0.004;
 
 %% Exported Value 
 FMS_EXPORT_VALUE.period = uint32(FMS_CONST.dt*1e3);
