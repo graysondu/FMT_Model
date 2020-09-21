@@ -7,7 +7,7 @@ end_time = 1000;
 %% init path
 filepath = which(mfilename);
 filefolder = fileparts(filepath);
-rootpath = fullfile(filefolder,'..');
+rootpath = fullfile(filefolder,'.');
 
 %% set build path
 buildpath = fullfile(rootpath, 'build');
