@@ -1,3 +1,6 @@
 [submodule "model/INS/Base_INS"]
 	path = model/INS/Base_INS
 	url = https://github.com/FirmamentPilot/Base_INS.git
+[submodule "model/FMS/Base_FMS"]
+	path = model/FMS/Base_FMS
+	url = https://github.com/FirmamentPilot/Base_FMS.git
