@@ -24,12 +24,15 @@ LogHeader.version = fread(fileID, 1, 'uint16=>uint16');
 LogHeader.timestamp = fread(fileID, 1, 'uint32=>uint32');
 LogHeader.max_name_len = fread(fileID, 1, 'uint16=>uint16');
 LogHeader.max_desc_len = fread(fileID, 1, 'uint16=>uint16');
+LogHeader.max_model_info_len = fread(fileID, 1, 'uint16=>uint16');
 LogHeader.description = fread(fileID, LogHeader.max_desc_len, 'char=>char');
+LogHeader.model_info = fread(fileID, LogHeader.max_model_info_len, 'char=>char');
 
 fprintf('Blog File:%s\n', logfile);
 fprintf('Version:%d\n', LogHeader.version);
 fprintf('Timestamp:%d(ms)\n', LogHeader.timestamp);
-fprintf('Description:%s\r\n', LogHeader.description);
+fprintf('Description:%s\n', LogHeader.description);
+fprintf('Model Information:\n%s\n', LogHeader.model_info);
 
 % Read Bus
 LogHeader.num_bus = fread(fileID, 1, 'uint8=>uint8');
