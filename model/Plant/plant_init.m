@@ -6,5 +6,5 @@
 wmm = load('wmmgrid_2019.mat');
 load('plant_config.mat');
 
-%% init specific plant
-run('multicopter_model_init.m');    % choose your own ins's script
+%% init specific plant model
+run('plant_model_init.m');

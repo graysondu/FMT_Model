@@ -10,3 +10,6 @@
 [submodule "model/Plant/Multicopter_Model"]
 	path = model/Plant/Multicopter_Model
 	url = https://github.com/FirmamentPilot/Multicopter_Model.git
+[submodule "model/Controller/Template_Controller"]
+	path = model/Controller/Template_Controller
+	url = https://github.com/FirmamentPilot/Template_Controller.git
