@@ -18,7 +18,7 @@ set_param(0, 'CodeGenFolder', buildpath);
 set_param(0, 'CacheFolder', buildpath);
 
 %% add path
-addpath(genpath(rootpath));
+addpath(genpath('build'));
 
 %% register code replacement library
 run('register_crl.m');
