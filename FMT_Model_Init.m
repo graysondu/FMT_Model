@@ -31,6 +31,3 @@ run('plant_init.m');
 run('ins_init.m');
 run('control_init.m');
 run('fms_init.m');
-
-%% init parameters
-Ts = 0.005; % used for visualization
