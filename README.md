@@ -30,6 +30,8 @@ Follow the belowing steps to start MIL simulation:
 
 Follow the belowing steps to start open-loop simulation:
 
+- Parse `blog.bin` log file and load **.mat* files into matlab workspace.
+- Run `utils/log_parser/load_parameter.m` script to load model parameters from log file.
 - Open the open-loop simulation model `$FMT_Model/simulation/OpenLoopSIM.slx`.
-
+- Clock `Run` button to start the simulation.
 
