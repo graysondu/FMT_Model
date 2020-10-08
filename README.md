@@ -7,7 +7,7 @@ Firmament Model (FMT Model) is a part of [Firmament Autopilot](https://github.co
 
 ## Quick Start
 
-FMT Model is mainly developed and tested in Matlab 2018b, so it's strongly recommended to use this version. However, it's possible to open the project with higher matlab version, but that is not well tested.
+FMT Model is mainly developed and tested in **Matlab 2018b**, so it's strongly recommended to use this version. However, it's possible to open the project with higher matlab version, but that is not well tested.
 
 ### Initialization
 
