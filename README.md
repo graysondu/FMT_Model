@@ -26,6 +26,11 @@ Follow the belowing steps to start MIL simulation:
 	- *Flightgear*: Flightgear Simulator  
 - Clock `Run` button to start the simulation.
 
+<p float="left">
+  <img src="https://github.com/FirmamentPilot/fmt_user_guide_cn/blob/master/fmt_model/simulation/figures/matlab_3D.png" width="400" />
+  <img src="https://github.com/FirmamentPilot/fmt_user_guide_cn/blob/master/fmt_model/simulation/figures/flightgear.png" width="400" />
+</p>
+
 ### Open-loop Simulation
 
 Follow the belowing steps to start open-loop simulation:
