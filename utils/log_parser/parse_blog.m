@@ -9,7 +9,8 @@ end
 
 logfile = strcat(folder, file);
 
-[header, log_msg] = blog_parser_legacy(logfile);
+% [header, log_msg] = blog_parser_legacy(logfile);
+[header, log_msg] = blog_parser(logfile);
 
 clear file;
 clear folder;
