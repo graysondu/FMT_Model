@@ -44,3 +44,14 @@ Follow the belowing steps to start open-loop simulation:
 - Open the open-loop simulation model `$FMT_Model/simulation/OpenLoopSIM.slx`.
 - Clock `Run` button to start the simulation.
 
+### Donation
+Thank you very much for your donation, so that I can have more time and enthusiasm to continue to work on this project.
+
+<p float="left">
+  <img src="https://github.com/FirmamentPilot/FMT_Firmware/blob/master/figures/wechat_pay.png" width="200" />
+  <img src="https://github.com/FirmamentPilot/FMT_Firmware/blob/master/figures/ali_pay.jpg" width="200" />
+</p>
+
+### Contact
+Wellcome to join our QQ group
+<p align="left"><img width="200" src="https://github.com/FirmamentPilot/FMT_Firmware/blob/master/figures/QR_code.png" alt=QR code"></p>
